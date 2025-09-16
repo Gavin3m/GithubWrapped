@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Wrapped</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1>Github Account Summary</h1>
+    <div id="dataCollector">
+        <input type="text" id="myInput" placeholder="Type something..." /><br>
+        <button id="fetch-all">Toggle All Options</button><br>
+        <div id="checkbox-container">
+            <div class="checkbox-wrapper">
+                <label class="scrape" for="fetch-name">Fetch Name</label>
+                <input type="checkbox" id="fetch-name">
+            </div>
+
+            <div class="checkbox-wrapper">
+                <label class="scrape" for="fetch-id">Fetch ID</label>
+                <input type="checkbox" id="fetch-id">
+            </div>
+
+            <div class="checkbox-wrapper">
+                <label class="scrape" for="fetch-html">Fetch GitHub Link</label>
+                <input type="checkbox" id="fetch-html">
+            </div>
+
+            <div class="checkbox-wrapper">
+                <label class="scrape" for="fetch-company">Fetch Company</label>
+                <input type="checkbox" id="fetch-company">
+            </div>
+
+            <div class="checkbox-wrapper">
+                <label class="scrape" for="fetch-repos">Fetch Repo Count</label>
+                <input type="checkbox" id="fetch-repos">
+            </div>
+
+            <div class="checkbox-wrapper">
+                <label class="scrape" for="fetch-fans">Fetch Fan Count</label>
+                <input type="checkbox" id="fetch-fans">
+            </div>
+
+            <div class="checkbox-wrapper">
+                <label class="scrape" for="fetch-stans">Fetch Stan Count</label>
+                <input type="checkbox" id="fetch-stans">
+            </div>
+
+            <div class="checkbox-wrapper">
+                <label class="scrape" for="fetch-created_at">Fetch Join Date</label>
+                <input type="checkbox" id="fetch-created_at">
+            </div>
+
+        </div>
+
+        <button id="scraper">Scrape Data</button>
+    </div>
+    
+    <div id="card">
+        <div id="heading">
+        <img id="pfp" src=""><br>
+        <a href="" id="cardTitle">Username - ID</a>
+        </div>
+        <h4 id="employmentStatus"></h4>
+        <h5 id="creationStatus"></h5>
+        <p class="description" id="repoStatus"></p>
+        <p class="description" id="fansStatus"></p>
+        <p class="description" id="stansStatus"></p>
+        <button id="newSearch">Perform a new Search</button>
+    </div>
+
+    <script src="source.js"></script>
+</body>
+</html>

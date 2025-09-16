@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 1rem;
+  max-width: 960px;
+  margin: auto;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+  color: #222;
+}
+
+
+input, textarea, select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button, .btn {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  margin: 10px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button:hover, .btn:hover {
+  background-color: #005fa3;
+}
+
+#checkbox-container {
+  display: grid;
+  grid-template-columns: 1fr 44px;
+  gap: 10px 12px;
+  align-items: center;
+  max-width: 600px;
+}
+
+.checkbox-wrapper {
+  display: contents;
+}
+
+.scrape {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  justify-self: end;
+  margin: 0;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+}
+
+#card{
+    background-color: #cca000;
+    padding: 50px;
+    border-radius: 10%;
+    width: fit-content;
+    display: none;
+}
+
+#heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#pfp{
+  border-radius: 10%;
+  height: 300px;
+  width: 300px;
+}
+
+#cardTitle {
+  color: #04022a;
+  text-decoration: none;
+}
+
+#cardTitle:hover {
+  text-decoration: underline;
+}
+
+.description{
+    font-size: smaller;
+}
+
+#employmentStatus{
+    display: none;
+}
+#repoStatus{
+    display: none;
+}
+#fansStatus{
+    display: none;
+}
+#stansStatus{
+    display: none;
+}
+#creationStatus{
+    display: none;
+}
